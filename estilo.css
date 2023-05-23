@@ -1,12 +1,27 @@
 * {font-family: Cambria;
-    
+    background-color: burlywood;
     margin:0%
     padding:0%
     
-    align-items: center,
-    justify-content:center,
+    align-items: center;
+    justify-content:center;
+}
+
+.title{
+    font-size: large;
+    color: brown;
+}
+
+.botas{
+    width: auto;
+    height: 1em;
+}
 
 
-
-
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
