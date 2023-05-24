@@ -1,11 +1,17 @@
 * {font-family: Cambria;
-    background-color: burlywood;
+    background-color: floralwhite;
     margin:0%
     padding:0%
     
     align-items: center;
     justify-content:center;
 }
+
+.color1 {color: #ca7b4a;}
+.color2 {color: #d09255;}
+.color3 {color: #dabb7d;}
+.color4 {color: #e2e1a8;}
+.color5 {color: #e8e8c9;}
 
 .title{
     font-size: large;
