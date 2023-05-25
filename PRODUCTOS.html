@@ -11,7 +11,7 @@
 <body>
   <section>
     <nav>
-      <div>
+      <div class="logo">
         <a href="index.html">
         <img src="imagenes/amalialogo-fondo-transparente.png" alt="logo">
         </a>
@@ -20,7 +20,6 @@
         <li>
           <a href="index.html">Inicio</a>
           <a href="PRODUCTOS.html">Productos</a>
-          <a href="">Tendencias de la temporada</a>
           <a href="CAMBIOS.html">Política de cambios</a>
           <a href="CONTACTO.html">Contacto</a>
           </li>
@@ -124,5 +123,72 @@
         </main>
       </section>
     
+      <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/borcego.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Borcego</p>
+                    <span class="precio">$ 21.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/bota alta.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>Bota caña alta </p>
+                    <span class="precio">$ 35.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/bota media caña.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Bota caña media
+                    </p>
+                    <span class="precio">$ 25.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imagenes/bota corta.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Bota corta</p>
+                    <span class="precio">$ 28.000</span>
+                </div>
+            </div>
+            </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="imagenes/borcego.jpg" alt="" id="img">
+                <h2 id="modelo">Borcego</h2>
+                <p id="descripcion">Borcego</p>
+
+                <span class="precio" id="precio">$ 21.000</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">TALLE</label>
+                        <select name="" id="">
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
