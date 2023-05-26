@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="shortcut icon" href="imagenes/botas.ico" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="estilo.css">
   <title>Amalia Calzados</title> 
 </head>
@@ -13,7 +14,11 @@
 <body>
 
     <header>
-
+      <div class="anuncio">
+        <span class="promo">PROMO MAYO HASTA -70% OFF</span>
+        <span class="promo">Env&iacute;o gratis a todo el pa&iacute;s</span>
+        <span class="promo">3 cuotas sin inter&eacute;s</span>
+      </div>
     </header>
 
     <section>
@@ -55,8 +60,9 @@
 
       <div class="redes-sociales">
         <h4 class="redes">Seguinos en</h4>
-          <a href="https://www.facebook.com/Amalia Calzados" target="_blank"><img src="facebook-logo.png" alt="Facebook"> Amalia Calzados</a>
-          <a href="https://www.instagram.com/Amalia Calzados" target="_blank"><img src="instagram-logo.png" alt="Instagram">Amalia Calzados</a>
+          <a href="https://www.facebook.com/Amalia Calzados" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPBJREFUSEtjZKAxYKSx+QyDy4KAiOMKzP+Z+hkYGAwYGBgUQL7/z8hwcN0KcwdcIUG0D6CGn2dgYBBANoxqFgRHnFzA8J8hHt2lVLMgKOLkAcb/DPZQCzb+/cmWsGGD4QdCiYToIAoOP/kfZhgjI0PjmhXmDYQMB8kPrAVBEacSGP79lwe7hJEBycWMB/7//38AJM7E9O/gmhWWYDY2gNcHaOGO3QACwUUFC/45ku2D4PBTE/4z/gdlKgakFATiPvzPyPAAxGD+y1iwerXZBbKCCFnT0ExFoz4Y+Jw8vOKAmJKT5LKIXEOR9RFdXJNrGQD+IXYZ/QMzUQAAAABJRU5ErkJggg==" alt="Facebook"></a>
+          <a href="https://www.instagram.com/Amalia Calzados" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgtJREFUSEvNVc1O20AQ/mZdOxypVBZ6inkCYtw79NJrwwMghTfgDQhPgLj11vAEtMee6t4xdp+gUS9V3EpAT7CWd5B/EuwkjZ1DRPdiyTuab75vZr4lrPjQivPjeQB+rQW2ofUJwB2AOotZcghQCBbnMnbC6dgZBpHp90D4mAUSvjHzbZZg7uEOEa2DsZddM45k7A7KoRWAyAw6IB2kic0H0X0J57ZJjwrGnwDsgIVTZlIFsK4HAHdNJewmyf+Y14eacArou0QYB4bWPwC6kGq3Ny6sAvDb8odMGMoHd3+68pF11RWgnfR/AhFuKefzqHX1jpi+EPBzQ7ntqOV7YLSlcrfnAkSWz2Ccy9g9HgfcIFiPreTrTLOZPBB/AOm/Qr+Qr2LnogDYk8qdFD4lkc8MnG4qtz8GiCw/bbDN4N6mepPqjJQNgQZgCmS8+3YSmzNoDlAkumTwwTj5JFkxbeW7pRmMLL9PwEmZclU6fVNm/D8CZFqvTqJUjqLJbQ3RS0cz+5frfwbC9/JIN5Jo/phqL9vSqgfMbHstQN2iPe0Ch9NTlTFr+R4x7A3l2v9YtMwq3ptKbDexijKhwo8WW8XE7Ji8xKCj1/fOsLnZJZcZw0VmV2pgbtdMHlFq15hr18yUexZx/q2z66ctTW2bjwm8z0C7hsUdgz1io9/owWkiyTIxz/MmL1NhXewj6rdVKIPlV3IAAAAASUVORK5CYII="alt="Instagram"></a>
+          <a href="https://www.whatsapp.com/Amalia Calzados" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAmRJREFUSEvFVU1u2mAQfeO6IVKM5OyALgo34Aal6+IKTgCcIOQETU/Q5ARwA6w4XZeeIPQEYVPMLkYYqRWWpxrHHzL+IahSlE9CLDzfvG/evDdDeOFDL5wfrw9QcYyWRtxjpiYA+XkAZgxMAfxcWr78F57CCioTs056MALQAmMFwoyAKQNmDPQhzmqXAn0w73oCnDm5AO++nzXDkH6AQUS4Xlj+Vd7l6t3ZEEzfpCoGunnVZADqE9P8qwcPAK00Lez8/rSZHaIgfswYwPtSoDfSlWQAqneGjRAt7Q23JLkA/gHMZdebFwHFIPcAbNfyu8m4PQAVSMBXoSXuwz2IPbe9aRyqRNFFoO7CWtsqdg+g6hjXAC5KgX4upSY4BjMNlp/XQkXhqToGA7hxLX9YBBBJzrX8lvwnAdIvy226Y+zdl5hUBeW5SHFhrfvyMaboQVTiWv75c66PGeglYzMAIJ65bb+jku24JR4v2pvBIZCaY1wx8MW1/F3edA8yJUrCmlMeM7hHxOOT7dvL7cm2HoY0YsA+DfQbJc1IgUxN11rXDzaZA72RlqUSQDQqiD0wRUmU4qKe3RoeEdmK4kwPFOfJS0lKZC4RIK5+GhOMlfJL5bbcJ2Kp6mPS0Vmj5Sghzbs8BHpQPw30mdCz8wvwSykwl6KozBwtHzEqRmA0VDWFTq455Q6DJyC+ZOBRA1oh0zzZSHU5GiF6cEHAUIZiXvIcHzw5ueDFUyKec0geKNoLkRllJ3Cg94tmVVqmMxDmAE81wlSGXcyvWL8JUB3MpuyGeOnY/71wnnPtsd9ffycf+9KiuH8K5UAotrKTUwAAAABJRU5ErkJggg==" alt="Whatsapp"></a>
       </div>
 
       <div class="medios-pago"></div>
