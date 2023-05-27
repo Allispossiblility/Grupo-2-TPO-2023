@@ -218,6 +218,14 @@ align-content: flex-start;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
+	
+    max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 .formulario__label {
