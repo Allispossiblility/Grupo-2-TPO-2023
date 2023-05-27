@@ -36,7 +36,7 @@ function quitarBordes(){
 }
 
 
-/Validación de Registrate/
+/Validacion de Registrate/
 
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
@@ -60,9 +60,6 @@ const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "usuario":
 			validarCampo(expresiones.usuario, e.target, 'usuario');
-		break;
-		case "nombre":
-			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
