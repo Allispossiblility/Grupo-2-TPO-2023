@@ -169,3 +169,44 @@ footer{
     text-align: center;
     background-color: pink;
 }
+
+
+*{
+  padding: 10px;  
+  margin: 10px;
+}
+body {
+    background-color: aquamarine;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    ;
+    font-weight: 200;
+}
+
+.flex-container {
+background-color: darksalmon;
+color: white;
+/*border: 2px solid black;*/
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: flex-start;
+align-content: flex-start;
+}
+
+.flex-box {
+    /*background-color: gray;*/
+
+    /*border: 5px solid black ;*/
+    box-shadow: black 5px 5px 5px;
+    font-size: 1rem ;
+
+    /*text-shadow: 3px 3px 3px;*/
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    flex-grow: 1;
+    flex-basis: auto;
+}
