@@ -1,9 +1,9 @@
 * {font-family: Cambria;
     background-color: floralwhite;
     margin:0%
-    padding:0%
+    padding 0%
     
-    align-items: center;
+    align-items center;
     justify-content:center;
 }
 
@@ -172,8 +172,8 @@ footer{
 
 
 *{
-  padding: 10px;  
-  margin: 10px;
+padding: 10px;  
+margin: 10px;
 }
 body {
     background-color: aquamarine;
@@ -210,6 +210,16 @@ align-content: flex-start;
     flex-grow: 1;
     flex-basis: auto;
 }
+
+.cambiodeproducto {
+
+    font-family: Cambria;
+    background-color: floralwhite;
+    margin:0%
+    align-items auto
+    justify-content auto
+}
+
 
 
 /*ESTILO DEL FORMULARIO*/
