@@ -1,38 +1,52 @@
 * {font-family: Cambria;
     background-color: floralwhite;
-    margin:0%
-    padding 0%
-    
+    padding: 0px;  
+    margin: 10px;
     align-items center;
     justify-content:center;
 }
 
+body {
+    background-color: #dcbca2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    ;
+    font-weight: 200;
+} 
+
 .promo{
     background-color: #dabb7d;
     color: floralwhite;
+    padding: 0px;  
+    margin: 0px;
 }
 
 .logo{
     display: flex;
     align-items: center;
+    padding: 0;  
+    margin: 0;
 }
 
 .logo img{
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
+    padding: 0;  
+    margin: 0;
 }
 
 a{
     color: #707070;
     text-decoration: none;
+    padding: 0;  
+    margin: 0;
 }
 
 
-/.color1 {color: #ca7b4a;}
-.color2 {color: #d09255;}
-.color3 {color: #dabb7d;}
-.color4 {color: #e2e1a8;}
-.color5 {color: #e8e8c9;}*/
+/*.color1 {color:#fcc9c3 ;}
+.color2 {color: #f99287;}
+.color3 {color: #f55947;}
+.color4 {color: #fde4e1;}
+.color5 {color: #a71909;}*/
 
 .title{
     font-size: large;
@@ -52,10 +66,6 @@ a{
     margin-right: auto;
     margin-left: auto;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
-
-
 
 .contenido{
     max-width: 900px;
@@ -167,24 +177,13 @@ a{
 
 footer{
     text-align: center;
-    background-color: pink;
+    background-color: wheat;
 }
 
-
-*{
-padding: 10px;  
-margin: 10px;
-}
-body {
-    background-color: aquamarine;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    ;
-    font-weight: 200;
-}
 
 .flex-container {
 background-color: darksalmon;
-color: white;
+color: floralwhite;
 /*border: 2px solid black;*/
 
 display: flex;
@@ -199,7 +198,7 @@ align-content: flex-start;
     /*background-color: gray;*/
 
     /*border: 5px solid black ;*/
-    box-shadow: black 5px 5px 5px;
+    box-shadow: brown 5px 5px 5px;
     font-size: 1rem ;
 
     /*text-shadow: 3px 3px 3px;*/
