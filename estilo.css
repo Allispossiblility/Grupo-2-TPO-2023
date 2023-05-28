@@ -108,6 +108,13 @@ section img:hover {
     filter: contrast(120%);
 }
 
+<<<<<<< HEAD
+=======
+.cuadro {
+    padding-top: -10px;
+}
+
+>>>>>>> rama1
 /* footer*/
 
 footer{
