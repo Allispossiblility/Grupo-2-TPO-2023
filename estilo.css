@@ -4,6 +4,7 @@
     margin: 10px;
     align-items center;
     justify-content:center;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,21 +14,13 @@ body {
     font-weight: 200;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 } 
 
 header{
     margin: 0;
     padding: 0;
     padding-bottom: 5px;
-}
-
-.promo{
-    background-color: #dabb7d;
-    color: floralwhite;
-    padding: 0;  
-    margin:0;
-    display: inline;
-    
 }
 
 .animate-animated{
@@ -39,6 +32,11 @@ header{
     padding: 5px;
     margin: 5px;
     text-align: center;
+}
+
+#bloqueNav {
+    padding-bottom: 3px;
+    background-color: floralwhite;
 }
   
 .perfil{
@@ -61,6 +59,7 @@ header{
     height: 150px;
     padding: 0;  
     margin: 0;
+    margin-bottom: 10px;
 }
 
 a{
@@ -69,9 +68,6 @@ a{
     padding: 0;  
     margin: 0;
 }
-
-
-
 
 /*.color1 {color:#fcc9c3 ;}
 .color2 {color: #f99287;}
@@ -84,22 +80,45 @@ a{
     color: brown;
 }
 
-.botas{
-    width: auto;
-    height: 1em;
+#nuevo {
+    font-size: 28px;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    color: floralwhite;
+    background-color: #dcbca2;
 }
 
-#carrousel{
-
+.galeria {
+    display: flex;
+    width: 1310px;
+    height: 430px;
 }
 
-.container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
 }
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* footer*/
+
+footer{
+    text-align: center;
+    background-color: white;
+}
+
+.redes {
+    background-color: ;
+}
+
 
 .contenido{
     max-width: 900px;
@@ -209,24 +228,18 @@ a{
     background-color: #000000;
 }
 
-footer{
-    text-align: center;
-    background-color: wheat;
-}
-
-
 .flex-container {
-background-color: darksalmon;
-color: floralwhite;
-/*border: 2px solid black;*/
+    background-color: darksalmon;
+    color: floralwhite;
+    /*border: 2px solid black;*/
 
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: flex-start;
-align-items: flex-start;
-align-content: flex-start;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    
 }
 
 .flex-container:hover {
