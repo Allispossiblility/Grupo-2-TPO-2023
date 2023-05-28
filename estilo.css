@@ -4,6 +4,7 @@
     margin: 10px;
     align-items center;
     justify-content:center;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
     font-weight: 200;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 } 
 
 header{
@@ -84,21 +86,28 @@ a{
     color: brown;
 }
 
-.botas{
-    width: auto;
-    height: 1em;
+#nuevo {
+    font-size: medium;
 }
 
-#carrousel{
-
+.galeria {
+    display: flex;
+    width: 1310px;
+    height: 430px;
 }
 
-.container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 .contenido{
