@@ -448,5 +448,61 @@ footer{
 	}
 }
 
+/*-------------------------- ESTILO DE LA API  --------------------*/
+.tarjeta {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #727272;
+    margin: 15px;
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.textocard {
+    padding: 10px;
+}
+
+.tarjeta a {
+    color: blanchedalmond;
+    font-size: 23px;
+    text-decoration: none;
+    background-color: dimgray;
+    padding: 5px;
+    margin: px;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+.contenedor p {
+    padding: 10px 0px;
+}
+
+.contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.logo {
+    grid-area: logo;
+
+    /*background-color: #000;*/
+    color: white;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer {
+    height: 60px;
+    grid-area: footer;
+    background-color: #000;
+    color: white;
+}
 
 
