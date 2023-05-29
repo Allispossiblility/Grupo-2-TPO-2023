@@ -1,0 +1,54 @@
+{
+  "Modelos": [
+    {
+      "id": 1,
+      "nombre": "Bucanera",
+      "director": "Moderna",
+      "clasificacion": "Largas"
+    },
+    {
+      "id": 2,
+      "nombre": "Borcego",
+      "director": "Moderna",
+      "clasificacion": "Cortas"
+    },
+    {
+      "id": 3,
+      "nombre": "Zapato",
+      "director": "Moderna",
+      "clasificacion": "Para la oficina"
+    },
+    {
+      "id": 4,
+      "nombre": "Texanas",
+      "director": "Moderna",
+      "clasificacion": "Largas"
+    },
+    {
+      "id": 5,
+      "nombre": "Mocasin",
+      "director": "Moderna",
+      "clasificacion": "Para la oficina"
+    },
+    
+
+],
+  "clasificaciones": [
+    {
+      "nombre": "Cortas",
+      "id": 1
+    },
+    {
+      "nombre": "Largas",
+      "id": 2
+    },
+    {
+      "nombre": "Ideales para salir",
+      "id": 3
+    },
+    {
+      "nombre": "Para la oficina",
+      "id": 4
+    }
+  ]
+}
