@@ -109,6 +109,10 @@ section img:hover {
     filter: contrast(120%);
 }
 
+.flex-containerGaleria {
+    display: flex;
+}
+
 /* footer*/
 
 footer{
@@ -282,8 +286,8 @@ footer{
     font-family: Cambria;
     background-color: floralwhite;
     margin:0%
-    align-items auto
-    justify-content auto
+    align-items: auto
+    justify-content: auto
 }
 
 
