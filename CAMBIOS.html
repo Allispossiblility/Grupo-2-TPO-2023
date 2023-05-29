@@ -56,7 +56,32 @@
             <p>Somos una marca de zapatos cruelty free artesanales. Confeccionados en Argentina, pueden presentar mínimas variaciones en colores o en los materiales según la disponibilidad de los mismos.</p>
         </div>
     </section>
-    
+    <!-- API -->
+
+<h2>Indique su Geolocation para el Cambio</h2>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
     <footer class="final">
       <h3 id="tituloFooter">Seguinos en</h3>
       <div>
