@@ -122,52 +122,21 @@ inputs.forEach((input) => {
 });
 
 formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
+    e.preventDefault();
 
-	const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
-		formulario.reset();
+    const terminos = document.getElementById('terminos');
+    if(campos.usuario && campos.password && campos.correo && campos.telefono.checked ){
+    formulario.submit();
 
-		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
+    document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+    setTimeout(() => {
+        document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+    }, 5000);
 
-		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
-		});
-	} else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-	}
+    document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+        icono.classList.remove('formulario__grupo-correcto');
+    });
+    } else {
+    document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+    }
 });
-
-/CODIGO DE LA API/
-
-let cad2=`
-<button onclick="traerPersonajePreferido()">Producto Seleccionado</button> <br>
- <div class="contenedor">
-`
-for(let elemento of data){
-    cad2= cad2+ `       
-            <div class="tarjeta">
-                <img src= ${elemento.image}   alt="producto">
-                <div class="textocard">
-                    <h2> ${elemento.name} </h2>
-                    <p> ${elemento.species}  </p>
-                    <p> ${elemento.gender} </p>
-                    <button onclick=" guardarLocalStorage( '${elemento.name}')" >Comprar</button>
-                </div>
-            </div>
-    `
-}
-cad2=cad2+`</div>`
-console.log(cad2)
-document.querySelector("main").innerHTML=cad2
-function guardarLocalStorage(personaje){
-    localStorage.setItem("personajePreferido", personaje)
-}
-
-function traerPersonajePreferido(){
-    console.log(localStorage.getItem("personajePreferido"))
-    alert(localStorage.getItem("personajePreferido"))
-}
