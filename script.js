@@ -126,7 +126,7 @@ formulario.addEventListener('submit', (e) => {
 
     const terminos = document.getElementById('terminos');
     if(campos.usuario && campos.password && campos.correo && campos.telefono.checked ){
-    formulario.submit();
+    formulario.reset();
 /*
     document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
     setTimeout(() => {
